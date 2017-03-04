@@ -20,6 +20,7 @@ import com.gruppomcr.entities.CaniEntity;
 @Repository
 public interface CaniRepository extends CrudRepository<CaniEntity, Integer> {
 	
+	List<CaniEntity> findByNomeAndRazzaAndSesso(String nome, String razza, String sesso);
 	
 	@Override
 	<S extends CaniEntity> S save(S entity);

@@ -19,9 +19,9 @@ public class CaniServiceImpl implements CaniService{
 
 	@Override
 	@Transactional
-	public List<CaniPojo> recuperaListaCani() {
+	public List<CaniPojo> recuperaListaCani(String nome, String razza, String sesso) {
 		
-		List<CaniEntity> listaCani = caniRepo.findAll();
+		List<CaniEntity> listaCani = caniRepo.findByNomeAndRazzaAndSesso(nome, razza, sesso);
 		
 		List<CaniPojo> listaCaniPojo = new ArrayList<CaniPojo>();
 		

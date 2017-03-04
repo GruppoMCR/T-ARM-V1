@@ -1,5 +1,7 @@
 package com.gruppomcr.controllers;
 
+import java.util.List;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +10,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.gruppomcr.pojos.CaniPojo;
 import com.gruppomcr.services.CaniService;
 //github.com/GruppoMCR/T-ARM-V1.git
 
@@ -21,8 +25,6 @@ public class HomeController {
 	@Autowired
 	private CaniService caniInterface;
 	
-	
-		
 //github.com/GruppoMCR/T-ARM-V1.git
 //	@RequestMapping(value ="/home", method = RequestMethod.GET)
 //	   public String homeRedirect(ModelMap model) {
@@ -36,7 +38,8 @@ public class HomeController {
     }
  
     @RequestMapping(value = {"/cercaAnimali"}, method = RequestMethod.GET)
-    public String productsPage(@RequestParam("")ModelMap model) {
+    public String productsPage(ModelMap model) {
+    	
         return "cercaAnimali";
     }
  
@@ -45,7 +48,17 @@ public class HomeController {
         return "contactus";
     }	
     @RequestMapping(value = {"/test"}, method = RequestMethod.GET)
-    public String test(ModelMap model) {
-        return "contactus";
+    public ModelAndView test(@RequestParam("nomeAnimale") String nomeAnimale,
+			    		@RequestParam("razzaAnimale") String razza,
+			    		@RequestParam("selezionaSesso") String sesso) {
+    	
+    	logger.info("test() ------ inizio");
+    	ModelAndView mv = new ModelAndView();
+    	List<CaniPojo> listaCaniFiltrata = caniInterface.recuperaListaCani(nomeAnimale, razza, sesso);
+    	
+    	mv.addObject("listaCani", listaCaniFiltrata);
+    	mv.setViewName("contactus");
+    	logger.info("test() ------ fine");
+        return mv;
     }	
 }

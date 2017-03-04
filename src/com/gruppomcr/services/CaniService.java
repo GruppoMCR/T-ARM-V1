@@ -6,6 +6,6 @@ import com.gruppomcr.pojos.CaniPojo;
 
 public interface CaniService {
 
-	public List<CaniPojo> recuperaListaCani();
+	public List<CaniPojo> recuperaListaCani(String nome, String razza, String sesso);
 	
 }
