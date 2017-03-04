@@ -1,7 +1,5 @@
 package com.gruppomcr.controllers;
 
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.gruppomcr.pojos.CaniPojo;
 import com.gruppomcr.services.CaniService;
+//github.com/GruppoMCR/T-ARM-V1.git
 
 @Controller
 //@RequestMapping("/")
@@ -25,6 +23,7 @@ public class HomeController {
 	
 	
 		
+//github.com/GruppoMCR/T-ARM-V1.git
 //	@RequestMapping(value ="/home", method = RequestMethod.GET)
 //	   public String homeRedirect(ModelMap model) {
 //	      logger.info("controller di reindirizzamento in homepage");
