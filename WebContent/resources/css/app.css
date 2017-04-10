@@ -1,107 +1,100 @@
-html{
-	background-color:#2F2F2F;
+/* Styles go here */
+html,body{
+	height:100%;
 }
 
 body{
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	margin: 0;
+	color: #cecece;
+	background: #2a2b30;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:4px;
+    /*background-image:url(/T-ARM-V1/resources/img/sfondo2.jpg);
+    background-size: 99% 100%;
+    background-repeat: no-repeat;*/
+}
+
+.containerInfoDoveSiamo {
+	height:100%;
+}
+
+.md-sidenav-left li {
+	
+    line-height: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+md-content{
+    overflow: auto;
+	max-height: 100vh;
+}
+
+.containerSideMenu_Content {
+	position: relative;
 	height: 100%;
-	background-color:rgb(245, 245, 245);
+    width: 100%;
+    border: 1px solid white;
+    overflow: hidden;
 }
 
-
-#header {
-    margin-left:20%;
-    top: 0px;
-    width: 80%;
-	height: 20%;
-	position: fixed;
-	font-family: 'bgMed',arial,helvetica,sans-serif;
-    font-size: 0.6em;
-    color: #fff;
-    z-index: 15;
-    text-transform: uppercase;
-    background-color: #272727;
-    border-bottom: 2px solid hsl(180,70%,55%);
-    padding-top:20px;
-    text-align:center;
-}
-
-#footer {
-	margin-left:20%;
-    left: 0px;
-    bottom: 0px;
-    width: 80%;
-	height: 10%;
-	position: fixed;
-	font-family: 'bgMed',arial,helvetica,sans-serif;
-    font-size: 0.6em;
-    color: #fff;
-    z-index: 15;
-    text-transform: uppercase;
-    background-color: #272727;
-	padding-top:20px;   
-    text-align:center;
-}
-
-
-#sidemenu {
-    width: 20%;
-    background-color:#2B2B2B;
+.slidedown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    overflow: auto;
-    float: left;
-    z-index: 20;
-    position: fixed;
-    left: 0px;
-    margin-top:
+   /* background-image:url(/T-ARM-V1/resources/img/sfondo.jpg);*/
+}
+.slidedown.ng-enter,
+.slidedown.ng-leave {
+    -webkit-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+.slidedown.ng-enter {
+    top: -100%;
+}
+.slidedown.ng-enter-active {
+    top: 0;
+}
+.slidedown.ng-leave {
+    top: 0;
+}
+.slidedown.ng-leave-active {
+    top: 100%;
 }
 
-#sidemenu #menu {
-    color: #fff;
-    text-align: right;
-    list-style-type: none;
-    margin-right: 40px;
-    float: right;
-}
+.dialogdemoBasicUsage #popupContainer {
+  position: relative; }
 
-#sidemenu #menu li {
-    width: 150px;
-    height: 35px;
-    font-size: 1.2em;
-    padding-right:5px;
-}
+.dialogdemoBasicUsage .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px; }
 
-#sidemenu #menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-}
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+  font-size: 0.8em;
+  margin-top: 50px; }
 
-#sidemenu #menu li:active{
-	border-left: 5px solid hsl(180,70%,55%);
-}
+.dialogdemoBasicUsage button {
+  width: 200px; }
 
-#sidemenu #menu li:hover {
-    background-color: #635555;
-    border-left: 5px solid hsl(180,70%,55%);
-}
+.dialogdemoBasicUsage div#status {
+  color: #c60008; }
 
-.logo{
-	float:left;
-	width:-moz-available;
-	height:-moz-available;
-}
+.dialogdemoBasicUsage .dialog-demo-prerendered md-checkbox {
+  margin-bottom: 0; }
 
-#site-content {
-    width: 80%;
-    height: 100%;
-    overflow: auto;
-    float: left;
-    z-index: 20;
-    position: fixed;
-    min-height: 600px;
-    margin-top:10%;
-    margin-bottom:10%;
-    margin-left:20%;
-    padding-left:10px;
-}
-    
+

@@ -1,0 +1,23 @@
+.md-sidenav-left {
+	
+	position: fixed;
+	top: 120px;
+	left: 0;
+	width: 300px;
+	height: calc(100vh - 120px);
+	background: #E64A19;
+	color:#FFFFFF;
+    top: 3.5em;
+    bottom: 0;
+    padding-left:0px;
+    text-align: left;
+ 	float:left;    
+}
+md-sidenav md-content {
+    background-color: #E64A19;
+}
+
+md-sidenav .md-button, span {
+	color:#FFFFFF;
+	
+}

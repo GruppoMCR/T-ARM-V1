@@ -1,0 +1,31 @@
+.top_navbar .md-toolbar-tools {
+    font-size: 30px;
+    background: #FF5722;
+    color:#FFFFFF;
+    letter-spacing: .005em;
+    box-sizing: border-box;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -webkit-flex;
+    
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    
+    width: 100%;
+    height: 120px;
+ 	max-height: none;
+   
+    margin: 0;
+}
+.topNav1{
+	border-right: 3px solid white;
+	padding: 7px;
+}
+.topNav2{
+	border-right: 3px solid white;
+	padding: 7px;
+}
