@@ -1,19 +1,39 @@
 <div class="test">
 <header>
-  <h1>Bau Loret Ipsum</h1> 
+  <h3>Contatti telefonici:</h3> 
 </header>
-
 <section id="home">
-  <h2>Home</h2>
-  <div class="illustration"></div>
-  <p>BLA BLA<br/><br/>
-
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna.</p>
+  <h4>Telefono: 064100000</h4>
+  <h4>Fax: 064100001</h4>  
+ <div class="illustration"></div>
 </section>
 <section id="contact-us">
-  <h2>Contact Us</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis diam id nulla dictum rhoncus. Praesent interdum, diam sit amet pretium fermentum, libero lacus porttitor justo, vitae molestie velit justo et est. Sed ut urna aliquet leo ornare viverra eu a est. Vivamus dignissim nisl sed metus hendrerit scelerisque. Nam facilisis velit id velit congue vitae venenatis orci tempor. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.<br/><br/>
-
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+  <h3>Contattaci via mail</h3>
+  <div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+      <!--  <br style="clear:both">-->  
+    				<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Telefono" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Oggetto" required>
+					</div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="message" placeholder="messaggio" maxlength="700" rows="8"></textarea>  
+                    </div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-danger">Invia</button>
+        </form>
+    </div>
+</div>
+</div>
 </section>
 </div>

@@ -33,20 +33,20 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
           url: 'adozioni',
           abstract: true
         })
-        .state('home.adozioni.aDistanza', {
-          url: '/a_distanza',
+        .state('home.adozioni.info', {
+          url: '/informazione_sulle_adozioni',
           views: {
             'content@home': {
-              templateUrl: 'resources/views/adozioniADistanza.jsp'
+              templateUrl: 'resources/views/info.jsp'
 // controller: 'AdozioniController'
             }
           }
         })
-        .state('home.adozioni.portamiACasa', {
-          url: '/portami_a_casa',
+        .state('home.adozioni.catalogo', {
+          url: '/catalogo',
           views: {
             'content@home': {
-              templateUrl: 'resources/views/adozioni.jsp',
+              templateUrl: 'resources/views/catalogo.jsp',
               controller: 'AdozioniController'
             }
           }
@@ -127,6 +127,24 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
         		'content@home': {
         			templateUrl: 'resources/views/contatti.jsp'
 // controller: 'ContattiController'
+        		}
+        	}
+        })
+         .state('home.adozioni.catalogo.templateAdozionePopUp.FormACasa', {
+        	url: '/FormACasa',
+        	views: {
+        		// il template e controller viene inietato nello stato home
+        		'content@home': {
+        			templateUrl: 'resources/views/FormACasa.jsp'
+        		}
+        	}
+        })
+        .state('home.adozioni.catalogo.FormDistanza', {
+        	url: '/FormDistanza',
+        	views: {
+        		// il template e controller viene inietato nello stato home
+        		'content@home': {
+        			templateUrl: 'resources/views/FormDistanza.jsp'
         		}
         	}
         })

@@ -18,13 +18,13 @@ angular
 								name : 'Adozioni',
 								type : 'toggle',
 								pages : [ {
-									name : 'A distanza',
+									name : 'catalogo',
 									type : 'link',
-									state : 'home.adozioni.aDistanza',
+									state : 'home.adozioni.catalogo',
 //									icon : 'fa fa-group'
 								}, {
-									name : 'Portami a casa',
-									state : 'home.adozioni.portamiACasa',
+									name : 'info sulle adozioni',
+									state : 'home.adozioni.info',
 									type : 'link',
 //									icon : 'fa fa-map-marker'
 								} ]
