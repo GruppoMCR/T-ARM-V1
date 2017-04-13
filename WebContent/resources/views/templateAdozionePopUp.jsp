@@ -1,3 +1,10 @@
+<script>
+$('#formACasa').click(function() {
+	
+    $('#templateAdozionePopUp').modal('hide');
+});
+
+</script>
 <md-dialog ng-controller="AdozioniController" class="md-dialog-popUp"
 	aria-label="Mango (Fruit)">
 <form>
@@ -47,15 +54,14 @@
 		aria-label="Toolbar with button groups">
 		<div class="btn-group mr-2" role="group">
 			<md-button class="md-accent md-raised md-hue-1"
-				ui-sref-active="active"
-				ui-sref="home.catalogo.templateAdozionePopUp.FormACasa">Portalo
+				ui-sref-active="active" ui-sref="home.adozioni.catalogo.FormACasa" id="formACasa">Portalo
 			a casa </md-button>
 		</div>
 		<div class="btn-group mr-2" role="group">
 			<md-button class="md-accent md-raised md-hue-1"
 				ui-sref-active="active"
-				ui-sref="home.catalogo.FormDistanza">Adottalo
-			a distanza a casa </md-button>
+				ui-sref="home.adozioni.catalogo.FormDistanza">Adottalo a
+			distanza a casa </md-button>
 		</div>
 	</div>
 	</md-button> </md-dialog-actions>

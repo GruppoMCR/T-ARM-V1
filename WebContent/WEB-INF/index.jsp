@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- JS -->
-
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 <script data-require="angular.js@1.5.8" data-semver="1.5.8"	src="https://code.angularjs.org/1.5.8/angular.js"></script>
 <!-- <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script> -->
 <script data-require="angular-ui-router@0.3.1" data-semver="0.3.1" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
@@ -44,6 +44,7 @@
 <script src="<c:url value='/resources/js/menu.service.js'/>" type="text/javascript"></script>
 <script src="<c:url value='/resources/js/menu_toggle.directive.js'/>" type="text/javascript"></script>
 <script src="<c:url value='/resources/js/menulink.directive.js'/>" type="text/javascript"></script>
+<script src="<c:url value='/resources/js/contatti.controller.js'/>" type="text/javascript"></script>
 <%-- <script src="<c:url value='/resources/js/test.js'/>" type="text/javascript"></script> --%>
 <script src="<c:url value='/resources/js/bootstrap.js'/>" type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jquery.js'/>" type="text/javascript"></script>

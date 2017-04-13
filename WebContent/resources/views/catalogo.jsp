@@ -27,15 +27,6 @@
 			</div>
 			<div class="dialogBoxIcons" layout="row"
 				layout-align="space-around center">
-				<md-button flex="10"> <!-- 				<div> --> <md-icon
-					class="material-icons md-light md-8"> favorite</md-icon> <!-- 					<p class="textDogCards">Mi piace</p> -->
-				<!-- 				</div> --> </md-button>
-				<div class="btn-group mr-2" role="group">
-					<md-button class="md-accent md-raised md-hue-1"
-						ui-sref-active="active"
-						ui-sref="home.adozioni.catalogo.templateAdozionePopUp.FormACasa">Portalo
-					a casa </md-button>
-				</div>
 				<!-- 			<md-divider></md-divider> -->
 				<md-button ng-click="showContent($event)" flex="10"> <!-- 				<div> -->
 				<md-icon class="material-icons md-light md-8"> zoom_in</md-icon> <!-- 					<p class="textDogCards">Visualizza</p> -->
