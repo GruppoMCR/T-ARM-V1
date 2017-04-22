@@ -29,6 +29,25 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
             }
           }
         })
+        .state('home.test', {
+        	url: '/test',
+        	views: {
+        		// il template e controller viene inietato nello stato home
+        		'content@home': {
+        			templateUrl: 'resources/views/test.jsp',
+        			controller: 'TestController as ctrl'
+        		}
+        	}
+        })
+//        .state('home.test', {
+//          url: '/test',
+//          views: {
+//            'content@home': {
+//              templateUrl: 'resources/views/test.jsp',
+//              controller: 'LoginController as vm'
+//            }
+//          }
+//        })
         .state('home.adozioni', {
           url: 'adozioni',
           abstract: true
@@ -50,7 +69,25 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
               controller: 'AdozioniController'
             }
           }
-        }).state('home.donazioni', {
+        }).state('home.adozioni.catalogo.FormACasa', {
+        	url: '/catalogo/FormACasa',
+        	views: {
+        		// il template e controller viene inietato nello stato home
+        		'content@home': {
+        			templateUrl: 'resources/views/FormACasa.jsp'
+        		}
+        	}
+        })
+        .state('home.adozioni.catalogo.FormDistanza', {
+        	url: '/catalogo/FormDistanza',
+        	views: {
+        		// il template e controller viene inietato nello stato home
+        		'content@home': {
+        			templateUrl: 'resources/views/FormDistanza.jsp'
+        		}
+        	}
+        })
+        .state('home.donazioni', {
             url: 'donazioni',
             abstract: true
         }).state('home.donazioni.materiale', {
@@ -61,7 +98,8 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
 // controller: 'AdozioniController'
               }
             }
-          }).state('home.donazioni.denaro', {
+          })
+          .state('home.donazioni.denaro', {
               url: '/dove_siamo',
               views: {
                 'content@home': {
@@ -126,28 +164,12 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
         		// il template e controller viene inietato nello stato home
         		'content@home': {
         			templateUrl: 'resources/views/contatti.jsp'
-// controller: 'ContattiController'
+controller: 'ContattiController'
         		}
         	}
         })
-         .state('home.adozioni.catalogo.templateAdozionePopUp.FormACasa', {
-        	url: '/FormACasa',
-        	views: {
-        		// il template e controller viene inietato nello stato home
-        		'content@home': {
-        			templateUrl: 'resources/views/FormACasa.jsp'
-        		}
-        	}
-        })
-        .state('home.adozioni.catalogo.FormDistanza', {
-        	url: '/FormDistanza',
-        	views: {
-        		// il template e controller viene inietato nello stato home
-        		'content@home': {
-        			templateUrl: 'resources/views/FormDistanza.jsp'
-        		}
-        	}
-        })
+        
+         
     }])
     // take all whitespace out of string
     .filter('nospace', function () {
