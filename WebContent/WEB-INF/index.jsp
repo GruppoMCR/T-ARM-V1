@@ -46,7 +46,10 @@
 <script src="<c:url value='/resources/js/menu_toggle.directive.js'/>" type="text/javascript"></script>
 <script src="<c:url value='/resources/js/menulink.directive.js'/>" type="text/javascript"></script>
 <script src="<c:url value='/resources/js/contatti.controller.js'/>" type="text/javascript"></script>
+<<<<<<< HEAD
 <script src="<c:url value='/resources/js/user_service.js'/>" type="text/javascript"></script>
+=======
+>>>>>>> branch 'master' of https://github.com/GruppoMCR/T-ARM-V1.git
 <%-- <script src="<c:url value='/resources/js/test.js'/>" type="text/javascript"></script> --%>
 
 
