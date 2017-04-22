@@ -2,25 +2,21 @@
 angular.module('bauApp.controllers').controller('LoginController', function($scope, $log, $mdDialog){
 
 	$log.debug('#Login Controller entering#');
-//	$scope.login = {
-//		    username: 'Bau',
-//		    password: 'Miau'
-//	};
-//	$scope.verificaCredenziali=function(){
-//		
-//	}
+
 	$scope.submitRegistrazione=function(){
 		$log.debug('submitRegistrazione()');
 		console.log($scope.form);
 	}
-//	$scope.verificaTest=function(){
-//		$scope.reg.ripetiEmail = $scope.reg.email === false ? true:false;
-//	}
+
 	$scope.verificaCredenziali = function() {
 	    // Appending dialog to document.body to cover sidenav in docs app
 	    // Modal dialogs should fully cover application
 	    // to prevent interaction outside of dialog
 		$log.debug('Username '+$scope.username+' e password'+$scope.password );
+	}	
+
+		    
+		    
 		if($scope.password == 'MiauMiau'){
 	    $mdDialog.show(
 	      $mdDialog.alert()
@@ -43,7 +39,7 @@ angular.module('bauApp.controllers').controller('LoginController', function($sco
 			        .targetEvent()
 			    );
 		}
-	}
+	
 //	$(window, document, undefined).ready(function() {
 //
 //		  $('input').blur(function() {

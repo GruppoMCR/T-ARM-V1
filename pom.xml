@@ -12,6 +12,18 @@
 	</properties>
 
 	<dependencies>
+	<dependency>
+    <groupId>com.thetransactioncompany</groupId>
+    <artifactId>cors-filter</artifactId>
+    <version>2.5</version>
+</dependency>
+
+	
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.7.5</version>
+		</dependency>
 		<!-- ANGULARJS -->
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -152,6 +164,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.0.0</version>
 				<configuration>
+					<warName>T-ARM</warName>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>

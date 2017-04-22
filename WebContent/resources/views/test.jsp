@@ -1,30 +1,106 @@
-<div class="test">
-<header>
-  <h1>Bau Loret Ipsum</h1> 
-</header>
+    <style>
+      .username.ng-valid {
+          background-color: lightgreen;
+      }
+      .username.ng-dirty.ng-invalid-required {
+          background-color: red;
+      }
+      .username.ng-dirty.ng-invalid-minlength {
+          background-color: yellow;
+      }
+ 
+      .email.ng-valid {
+          background-color: lightgreen;
+      }
+      .email.ng-dirty.ng-invalid-required {
+          background-color: red;
+      }
+      .email.ng-dirty.ng-invalid-email {
+          background-color: yellow;
+      }
+ 
+    </style>
+     
 
-<section id="home">
-  <h2>Home</h2>
-  <div class="illustration"></div>
-  <p>BLA BLA<br/><br/>
-
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna.</p>
-</section>
-<section id="clients">
-  <h2>Clients</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. <br/><br/>Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-</section>
-<section id="about">
-  <h2>About</h2>
-  <div class="illustration"></div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.<br/><br/>
-
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. <br/><br/>Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. </p>
-</section>
-<section id="contact-us">
-  <h2>Contact Us</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis diam id nulla dictum rhoncus. Praesent interdum, diam sit amet pretium fermentum, libero lacus porttitor justo, vitae molestie velit justo et est. Sed ut urna aliquet leo ornare viverra eu a est. Vivamus dignissim nisl sed metus hendrerit scelerisque. Nam facilisis velit id velit congue vitae venenatis orci tempor. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.<br/><br/>
-
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-</section>
-</div>
+ 
+      <div class="generic-container">
+          <div class="panel panel-default">
+              <div class="panel-heading"><span class="lead">User Registration Form </span></div>
+              <div class="formcontainer">
+                  <form ng-submit="ctrl.submit()" name="myForm" class="form-horizontal">
+                      <input type="hidden" ng-model="ctrl.user.id" />
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="uname">Name</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.user.username" id="uname" class="username form-control input-sm" placeholder="Enter your name" required ng-minlength="3"/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.uname.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
+                                      <span ng-show="myForm.uname.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                         
+                       
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Address</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.user.address" id="address" class="form-control input-sm" placeholder="Enter your Address. [This field is validation free]"/>
+                              </div>
+                          </div>
+                      </div>
+ 
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="email">Email</label>
+                              <div class="col-md-7">
+                                  <input type="email" ng-model="ctrl.user.email" id="email" class="email form-control input-sm" placeholder="Enter your Email" required/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.email.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.email.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+ 
+                      <div class="row">
+                          <div class="form-actions floatRight">
+                              <input type="submit"  value="{{!ctrl.user.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+                              <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="panel panel-default">
+                <!-- Default panel contents -->
+              <div class="panel-heading"><span class="lead">List of Users </span></div>
+              <div class="tablecontainer">
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th>ID.</th>
+                              <th>Name</th>
+                              <th>Address</th>
+                              <th>Email</th>
+                              <th width="20%"></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="u in ctrl.users">
+                              <td><span ng-bind="u.id"></span></td>
+                              <td><span ng-bind="u.username"></span></td>
+                              <td><span ng-bind="u.address"></span></td>
+                              <td><span ng-bind="u.email"></span></td>
+                              <td>
+                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>

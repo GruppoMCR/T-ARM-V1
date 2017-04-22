@@ -21,4 +21,8 @@
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
   </listener>
+<!--   <filter> -->
+<!-- 	<filter-name>CORS</filter-name> -->
+<!-- 	<filter-class>com.gruppomcr.configuration.CORSFilter</filter-class> -->
+<!-- 	</filter> -->
 </web-app>

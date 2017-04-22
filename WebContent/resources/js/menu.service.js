@@ -10,7 +10,7 @@ angular
 
 							var sections = [ {
 								name : 'Test BAU Master',
-								state : 'home.chiSiamo',
+								state : 'home.test',
 								type : 'link'
 							} ];
 

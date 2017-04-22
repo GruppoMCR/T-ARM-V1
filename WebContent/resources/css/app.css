@@ -4,8 +4,8 @@ html,body{
 }
 
 body{
-	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	overflow: hidden;
+	/*font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;*/
+	font-family: 'Permanent Marker', cursive !important;
 	margin: 0;
 	color: #cecece;
 	background: #2a2b30;
