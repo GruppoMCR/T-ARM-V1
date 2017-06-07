@@ -144,8 +144,8 @@ angular.module('bauApp', ['bauApp.controllers', 'ngAnimate', 'ui.router', 'ngMat
         	views: {
         		// il template e controller viene inietato nello stato home
         		'content@home': {
-        			templateUrl: 'resources/views/contatti.jsp'
-controller: 'ContattiController'
+        			templateUrl: 'resources/views/contatti.jsp',
+        			controller: 'ContattiController'
         		}
         	}
         })
