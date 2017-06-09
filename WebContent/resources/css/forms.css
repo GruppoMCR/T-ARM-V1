@@ -55,8 +55,19 @@ md-input-container label form {
 	display: inline-block;
     text-align: center;
 }
+
 .formLogin {
 	width:100%;
 	display: inline-block;
-    text-align: center;
+	text-align: center;
+	height: 100%;
+    overflow: hidden;
 }
+
+.loginContent .formLogin{
+	width: 100%;
+    height: 99%;  
+    overflow: hidden;
+    padding-right: 15px;
+}
+

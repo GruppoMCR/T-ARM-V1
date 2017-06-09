@@ -1,27 +1,45 @@
 
-angular.module('bauApp.controllers').controller('AdozioniController', function($scope, $log, $mdDialog){
+angular.module('bauApp.controllers').controller('AdozioniController', function(CaniService, $scope, $log, $mdDialog){
 
 	$log.debug('#Adozioni Controller entering#');
 	$scope.orderList = "name";
-	$scope.animals = [
-		{nome:'Fabio', razza:'cane'}, 
-		{nome:'Leonardo',razza:'cane'}, 
-		{nome:'Thomas',razza:'cane'}, 
-		{nome:'Gabriele',razza:'cane'}, 
-		{nome:'Fabrizio',razza:'cane'}, 
-		{nome:'Eva Henger',razza:'cagna'}, 
-		{nome:'Cicciolina',razza:'cagna'}, 
-		{nome:'Jenna Have',razza:'cagna'}];
+//	$scope.animals = [
+//		{nome:'Fabio', razza:'cane'}, 
+//		{nome:'Leonardo',razza:'cane'}, 
+//		{nome:'Thomas',razza:'cane'}, 
+//		{nome:'Gabriele',razza:'cane'}, 
+//		{nome:'Fabrizio',razza:'cane'}, 
+//		{nome:'Eva Henger',razza:'cagna'}, 
+//		{nome:'Cicciolina',razza:'cagna'}, 
+//		{nome:'Jenna Have',razza:'cagna'}];
+	
+	$scope.animal={id:null, razza:'',pedegree:'', nome:'', pelo:'', sesso:'', dataNascita:'', descrizione:''};
+	$scope.animals=[];
+	$scope.status = '  ';
+	$scope.customFullscreen = false;
 	
 	$scope.imagePath = 'resources/img/dog_avatar_0387.jpg';
 	
 	$scope.statusSearch=false;
+	
 	$scope.toggleShow = function(){
 		$scope.statusSearch = $scope.statusSearch === false ? true:false;
 	};
 	
-	$scope.status = '  ';
-	$scope.customFullscreen = false;	  
+	racuperaTuttiICani();
+	 
+    function racuperaTuttiICani(){
+    	CaniService.racuperaTuttiICani()
+            .then(
+            function(d) {
+            	$scope.animals = d;
+            },
+            function(errResponse){
+                console.error('Error while fetching dogs');
+            }
+        );
+    }
+	
 	$scope.showContent = function(ev) {
 		    $mdDialog.show({
 		      controller: DialogController,

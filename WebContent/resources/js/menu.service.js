@@ -21,12 +21,12 @@ angular
 									name : 'catalogo',
 									type : 'link',
 									state : 'home.adozioni.catalogo',
-//									icon : 'fa fa-group'
+									icon : 'fa fa-paw'
 								}, {
-									name : 'info sulle adozioni',
+									name : 'Come funziona',
 									state : 'home.adozioni.info',
 									type : 'link',
-//									icon : 'fa fa-map-marker'
+									icon : 'fa fa-info'
 								} ]
 							});
 

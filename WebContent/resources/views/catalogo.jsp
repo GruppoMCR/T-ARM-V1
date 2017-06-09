@@ -2,22 +2,15 @@
 	<div layout="row">
 		<h3>Elenco dei cani</h3>
 		<span flex></span>
-		<!-- <select ng-model="orderList" ng-show="$statusSearch"> -->
-		<!--     <option value="name">By name</option> -->
-		<!--     <option value="-age">Newest</option> -->
-		<!--     <option value="age">Oldest</option> -->
-		<!-- </select> -->
 		<md-input-container class="md-block" md-no-float>
-		<input ng-model="nome" type="text" placeholder="Filtro..."
-			ng-show="statusSearch"> </md-input-container>
-		<md-button class="md-fab md-accent" aria-label="Search"
-			ng-click="toggleShow()"> <md-tooltip>Filtra
-		l'elenco inserendo una parola chiave</md-tooltip> <md-icon
-			class="material-icons md-light"> search</md-icon> </md-button>
-
+			<input ng-model="nome" type="text" placeholder="Filtro..." ng-show="statusSearch"> 
+		</md-input-container>
+		<md-button class="md-fab md-accent" aria-label="Search"	ng-click="toggleShow()"> 
+			<md-tooltip>Filtra l'elenco inserendo una parola chiave</md-tooltip> 
+			<md-icon class="material-icons md-light"> search</md-icon> 
+		</md-button>
 	</div>
 	<div layout="row" layout-wrap>
-
 		<div class="listAnimals" layout="column"
 			ng-repeat="animale in animals | filter:nome" flex="33">
 			<md-card> <img ng-src="{{imagePath}}" class="md-card-image"

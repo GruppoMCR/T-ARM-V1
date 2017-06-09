@@ -20,7 +20,7 @@ public class Cane implements Serializable {
 	//	 @Id
 //	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //	    private int id;
-	 @Id
+	@Id
 	@Column(name = "ID")
 	private Integer id;
 	@Column(name = "RAZZA")

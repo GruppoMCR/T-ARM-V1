@@ -1,22 +1,22 @@
-<div class="test">
+<md-content class="test" layout-padding layout-allign="center center">
 	<md-toolbar>
 	<div class="md-toolbar-tools"">
 		<h2>
-			<span>Chiamaci o mandaci un fax</span>
+			<span>Chiama oppure invia un fax</span>
 		</h2>
 	</div>
 	</md-toolbar>
-	<section id="contattiTelefonici">
+<!-- 	<section id="contattiTelefonici"> -->
 		<div>
 			<label> Telefono:{{contatti.telefono}} </label>
-			<md-button type="submit" class="md-raised md-primary">modifica</md-button>
+			<md-button type="submit" class="md-raised md-primary" ng-show="false">Modifica</md-button>
 		</div>
 
 		<div>
 			<label> Fax: {{contatti.fax}} </label>
-			<md-button type="submit" class="md-raised md-primary">modifica</md-button>
+			<md-button type="submit" class="md-raised md-primary" ng-show="false">modifica</md-button>
 		</div>
-	</section>
+<!-- 	</section> -->
 	<md-toolbar>
 	<div class="md-toolbar-tools">
 		<h2>
@@ -42,8 +42,8 @@
 					ng-pattern="/^.+@.+\..+$/">
 				<div ng-messages="contattaciForm.email.$error">
 					<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-            il campo deve essere compreso da 10 a 100 caratteri e deve essere scritto con questo formato "example@mail.com"
-          </div>
+            			Il campo deve essere compreso da 10 a 100 caratteri e deve essere scritto con questo formato "example@mail.com"
+          			</div>
 				</div>
 				</md-input-container>
 
@@ -67,4 +67,4 @@
 			<form>
 		</div>
 	</section>
-</div>
+</md-content>

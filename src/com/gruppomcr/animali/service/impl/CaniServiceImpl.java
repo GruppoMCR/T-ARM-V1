@@ -37,9 +37,9 @@ public class CaniServiceImpl implements CaniService{
 	}
 
 	@Override
-	public Cane cercaAnimale(String id) {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean cercaAnimale(Integer id) {
+		
+		return dao.cercaAnimale(id);
 	}
 
 	@Override

@@ -1,11 +1,16 @@
+md-sidenav ul,li {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
 .md-sidenav-left {
 	
 	position: fixed;
 	top: 120px;
 	left: 0;
-	width: 300px;
+	width: 200px;
 	height: calc(100vh - 120px);
-	background: #E64A19;
+	background: #2D2383;
 	color:#FFFFFF;
     top: 3.5em;
     bottom: 0;
@@ -13,11 +18,14 @@
     text-align: left;
  	float:left;    
 }
+
 md-sidenav md-content {
-    background-color: #E64A19;
+    background-color: #2D2383;
 }
 
-md-sidenav .md-button, span {
+md-sidenav .md-button-toggle {
 	color:#FFFFFF;
-	
+	border-color: #ffffff;
+	border-left-width: 4px;
+	border-left-style: solid;
 }

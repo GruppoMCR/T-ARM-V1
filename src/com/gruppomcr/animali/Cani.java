@@ -12,7 +12,7 @@ public interface Cani {
 
 	void eliminaCane(String id);
 
-	Cane cercaAnimale(String id);
+	boolean cercaAnimale(Integer id);
 
 	void aggiornaCane(Cane cane);
 }

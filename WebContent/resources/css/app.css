@@ -1,17 +1,17 @@
 /* Styles go here */
 html,body{
 	height:100%;
+	overflow:hidden;
 }
 
 body{
-	/*font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;*/
-	/*font-family: 'Permanent Marker', cursive !important;*/
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	color: #cecece;
 	background: #2a2b30;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow : hide;
 }
 .container {
     padding-right: 0px;
@@ -37,11 +37,6 @@ body{
     line-height: 20px;
     position: relative;
     box-sizing: border-box;
-}
-
-md-content{
-    overflow: auto;
-	max-height: 100vh;
 }
 
 .containerSideMenu_Content {

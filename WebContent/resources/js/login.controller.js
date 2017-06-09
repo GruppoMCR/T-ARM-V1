@@ -13,7 +13,7 @@ angular.module('bauApp.controllers').controller('LoginController', function($sco
 	    // Modal dialogs should fully cover application
 	    // to prevent interaction outside of dialog
 		$log.debug('Username '+$scope.username+' e password'+$scope.password );
-	}	
+		
 
 		    
 		    
@@ -39,7 +39,7 @@ angular.module('bauApp.controllers').controller('LoginController', function($sco
 			        .targetEvent()
 			    );
 		}
-	
+	}
 //	$(window, document, undefined).ready(function() {
 //
 //		  $('input').blur(function() {
